@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    "nginx.conf": "nginx",
+    "*.conf": "nginx",
+    "Dockerfile*": "dockerfile"
+  },
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": [
+      "docker-compose*.yml"
+    ]
+  },
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "editor.rulers": [100]
+}

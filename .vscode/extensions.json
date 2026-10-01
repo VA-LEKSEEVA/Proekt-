@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-azuretools.vscode-docker",
+        "redhat.vscode-yaml",
+        "william-voyek.vscode-nginx",
+        "ms-python.python",
+        "mikestead.dotenv",
+        "usernamehw.errorlens"
+    ]
+}

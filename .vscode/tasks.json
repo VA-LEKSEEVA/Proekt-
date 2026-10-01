@@ -1,0 +1,49 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "certs: generate",
+            "type": "shell",
+            "command": "bash scripts/gen-certs.sh",
+            "problemMatcher": []
+        },
+        {
+            "label": "compose: up",
+            "type": "shell",
+            "command": "docker compose up -d --build",
+            "dependsOn": [
+                "certs: generate"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "compose: down",
+            "type": "shell",
+            "command": "docker compose down",
+            "problemMatcher": []
+        },
+        {
+            "label": "compose: down+volumes",
+            "type": "shell",
+            "command": "docker compose down -v",
+            "problemMatcher": []
+        },
+        {
+            "label": "compose: logs",
+            "type": "shell",
+            "command": "docker compose logs -f --tail=100",
+            "problemMatcher": [],
+            "isBackground": true
+        },
+        {
+            "label": "check: health/deep",
+            "type": "shell",
+            "command": "curl -ks https://localhost/health/deep",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+.env
+certs/
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+*.log
+.DS_Store
